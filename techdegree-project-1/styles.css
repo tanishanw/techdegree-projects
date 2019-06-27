@@ -88,7 +88,7 @@ header {
   transform: scale(1.5) rotate(360deg);
 }
 
-.exp-header {
+.int-header {
   background: url('images/books.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,7 +97,7 @@ header {
   padding-top: 60px;
 }
 
-.exp-header-text {
+.int-header-text {
   background-color: #efefef;
   color: purple;
   padding: 10px;
@@ -107,7 +107,7 @@ header {
   font-family: 'Roboto', sans-serif
 }
 
-.exp-header-intro {
+.int-header-intro {
   background-color: #f36565;
   color: rgb(236, 221, 236);
   padding: 10px;
@@ -116,7 +116,7 @@ header {
   margin: 0px 500px 0px 500px;
 }
 
-.exp-header-img {
+.exp-header {
   background: url('images/waiter.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -218,7 +218,7 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
-  .flex {
+  .background {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex; 
       max-width: 1200px;
