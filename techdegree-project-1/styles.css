@@ -56,11 +56,12 @@ a:hover {
 }
 
 .nav-exp {
+  display: block;
+  margin-right: auto;
+  height: auto;
   width: 100%;
   background: black;
-  min-height: 30px;
   padding: 10px;
-  text-align: center;
 }
 
 .index-header {
@@ -80,11 +81,11 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 1px solid rgb(101, 240, 245);
-  transition: all .5s;
+  border: pink solid 3px;
+  transition: all 1.8s;
 }
 .profile-image:hover {
-  transform: scale(2) rotate(15deg);
+  transform: scale(1.5) rotate(360deg);
 }
 
 .exp-header {
@@ -112,9 +113,17 @@ header {
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
+  margin: 0px 500px 0px 500px;
 }
 
+.exp-header-img {
+  background: url('images/waiter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  background-position: center;
+  padding-top: 60px;
+}
 .tag {
   background-color: #efefef;
   color: purple;
@@ -125,7 +134,7 @@ header {
 } 
 .location {
   background-color: purple;
-  color: yellow;
+  color: white;
 }
 .card {
   margin: 30px;
@@ -244,3 +253,43 @@ a.social:hover {
 
 }
 
+.interest-list {
+  border: #f36565 solid 4px;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+  margin: 10px 500px 10px 500px; 
+  border-radius: 5px;
+}
+
+.flex-container {
+  display: flex;
+  height: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.med-img {
+  height: 250px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.queen-img {
+  height: 250px;
+  width: 200px;
+  border-radius: 10%;
+}
+
+.star-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.tony-img {
+  height: 250px;
+  width: 200px;
+  border-radius: 10%;
+}
