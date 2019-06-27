@@ -123,6 +123,7 @@ header {
   height: auto;
   background-position: center;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .tag {
   background-color: #efefef;
