@@ -124,6 +124,32 @@ header {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.goals-header {
+  background: url('images/rainforest.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.goals-header-text {
+  background-color: #efefef;
+  color: purple;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.goals-main {
+  font-family: 'Roboto', sans serif;
+  font-size: 50px;
+  padding: 10px;
+}
+
 .tag {
   background-color: #efefef;
   color: purple;
@@ -291,5 +317,13 @@ a.social:hover {
 .tony-img {
   height: 250px;
   width: 200px;
+  border-radius: 10%;
+}
+
+.image-size {
+  display: flexbox;
+  flex: column;
+  height: 300px;
+  width: auto;
   border-radius: 10%;
 }
