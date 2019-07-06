@@ -41,27 +41,20 @@ a:hover {
 }
 
 .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
+  display: block;
+  margin-right: auto;
+  color: white;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
 .nav a:hover {
   color: white
-}
-
-.nav-exp {
-  display: block;
-  margin-right: auto;
-  height: auto;
-  width: 100%;
-  background: black;
-  padding: 10px;
 }
 
 .index-header {
@@ -107,7 +100,7 @@ header {
   font-family: 'Roboto', sans-serif
 }
 
-.int-header-intro {
+.header-intro {
   background-color: #f36565;
   color: rgb(236, 221, 236);
   padding: 10px;
@@ -117,16 +110,18 @@ header {
 }
 
 .exp-header {
+  text-align: center;
   background: url('images/waiter.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 620px;
   background-position: center;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 1px;
 }
 
 .goals-header {
-  background: url('images/rainforest.jpg');
+  background: url('images/machu-picchu.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -142,12 +137,6 @@ header {
   display: table;
   margin: 10px auto;
   font-family: 'Roboto', sans-serif;
-}
-
-.goals-main {
-  font-family: 'Roboto', sans serif;
-  font-size: 50px;
-  padding: 10px;
 }
 
 .tag {
@@ -168,11 +157,26 @@ header {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
   transition: all .5s;
+  border: #f36565 solid 4px;
+  border-radius: 5px;
 }
 .card:hover {
+  border-color: #ff99ff;
+}
+
+.exp-card {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  transition: all .5s;
+  border: #f36565 solid 4px;
+  border-radius: 5px;
+}
+.exp-card:hover {
   border-color: #ff99ff;
 }
 
@@ -288,12 +292,44 @@ a.social:hover {
   border-radius: 5px;
 }
 
-.flex-container {
+.img-container {
   display: flex;
   height: 500px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.g-img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.matrix-img {
+  height: 200px;
+  width: auto;
+  border-radius: 10%;
+}
+
+.beach-img {
+  height: 200px;
+  width: auto;
+  border-radius: 10%;
+}
+
+.freedom-img {
+  height: 200px;
+  width: auto;
+  border-radius: 10%;
+}
+
+.sky-img {
+  height: 200px;
+  width: auto;
+  border-radius: 10%;
 }
 
 .med-img {
@@ -317,13 +353,5 @@ a.social:hover {
 .tony-img {
   height: 250px;
   width: 200px;
-  border-radius: 10%;
-}
-
-.image-size {
-  display: flexbox;
-  flex: column;
-  height: 300px;
-  width: auto;
   border-radius: 10%;
 }
