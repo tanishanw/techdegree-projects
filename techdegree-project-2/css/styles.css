@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: aliceblue;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.main-header {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.name {
+    text-align: center;
+    font-size: 20px;
+    color: #555454;
+    margin: 0 auto;
+    padding: 30px 0; 
+}
+
+.main-nav ul {
+    padding: 0;
+}
+
+.main-nav li {
+    font-size: 15px;
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #555454;
+    display: block;
+    padding: 10px 50px;
+    margin-bottom: 5px;
+}
+
+.main-nav {
+    margin-bottom: 30px;   
+}
+
+.wrapper {
+    width: 90%;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.image {
+    height: 10em;
+    text-align: center;
+    margin: 10px auto 20px auto;
+    max-width: 100%;
+}
+
+.intro-wrap {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro {
+    padding-bottom: 30px;
+    font-size: 15px;
+    color: #747474;
+    line-height: 1.5em;
+}
+
+#portfolio {
+    margin: 0 auto;
+    padding: 20px 0 30px 0;
+    color: #555454;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #555454;
+    padding-bottom: 15px;
+    line-height: 1.5em;
+}
+
+p {
+    font-size: .9em;
+    color: #555454;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    line-height: 1.5em;
+}
+
+main p {
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.padding {
+    padding-bottom: 20px;
+}
+
+.footer-container {
+    background-color: aliceblue;
+    text-align: center;
+    margin: 0;
+}
+
+.contact {
+    margin: 30px auto;
+    padding: 20px 0 40px 0;
+    border-bottom: 2px solid grey;
+    text-align: center;
+    width: 90%;
+    color: #747474;
+}
+
+.contact h2 {
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: black;
+}
+
+.contact p {
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+footer {
+    width: 90%;
+    font-size: .8em;
+    color: #555454;
+    display: table;
+    margin: 0 auto;
+}
+
+.footer-name {
+    display: inline-block;
+    float: left;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+
+.footer-back {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.footer-back a {
+    display: block;
+    padding: 30px 0;
+    text-decoration: none;
+    color: #555454;
+}
+
+/** ==============================================
+            Media Queries
+==============================================   */
+
+@media (max-width: 767px) {
+    
+    .secondary-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-nav li {
+        display: inline-block;
+        background-color: aliceblue;        
+        margin: 0 5px;
+    }   
+
+    .main-nav li a {
+        padding: 0 20px;
+    }
+
+    .wrapper {
+        display: contents;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .image-wrap {
+        width: 45%;
+        display: inline-block;
+        float: right;
+        padding: 30px 0;
+    }
+
+    .image {
+        float: right;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .intro-wrap {
+        display: table;
+    }
+
+    .intro {
+        display: inline-block;
+        width: 55%;
+        text-align: left;
+        font-size: 1.1em;
+        padding: 30px 0;
+    }
+
+    main {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #portfolio {
+        padding: 30px 0;
+        margin: 20px auto;
+    }
+
+
+    section .image {
+        display: inline-block;
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .section-1,
+    .section-3,
+    .section-5 {
+        float: left;
+        width: 50%;
+        height: auto;
+        display: inline-block;
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    .section-2,
+    .section-4,
+    .section-6 {
+        float: right;
+        width: 50%;
+        height: auto;
+        display: inline-block;
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    main h3,
+    main p {
+        margin: 0 20px;
+    }
+
+    main p {
+        max-height: 74px;
+        max-width: 460px;
+    }
+
+    .contact h2 {
+        color: #555454;
+    }
+
+    .contact p {
+        margin: 20px auto;
+        padding: 0;
+        width: 85%;
+        font-size: 1.2em;
+    }
+
+    footer {
+        width: 90%;
+        text-align: center;
+        display: table;
+        margin: 0 auto;
+    }
+
+    .footer-name {
+        float: left;
+        padding: 10px 0 50px 0;
+        margin: 0;
+    }
+
+    .footer-back {
+        display: none;
+    }
+
+    .secondary-nav {
+        float: right;
+        display: inline-block;
+        padding: 0;
+    }
+
+    .secondary-nav li {
+        display: inline-block;
+    }
+
+    .secondary-nav a {
+        display: block;
+        text-decoration: none;
+        color: #555454;
+        padding: 10px 0 50px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .name {
+        display: inline-block;
+        float: left;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .main-nav {
+        display: inline-block;
+        float: right;
+
+    }
+
+    .main-nav ul {
+        display: inline-block;
+    }
+
+    .main-nav li a {
+        padding: 40px 20px;
+        font-size: 1.1em;
+    }
+
+    body {
+        background: aliceblue;
+    }
+
+    main {
+        background: white;
+        display: contents;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3 {
+        display: inline-block;
+        margin: 0 auto;
+        width: 33.3%;
+        text-align: center;
+    }
+
+    .section-4,
+    .section-5,
+    .section-6 {
+        display: inline-block;
+        margin: 0 auto;
+        width: 33.3%;
+    }
+
+    section .image {
+        display: table;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+
+    section h3 {
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    section p {
+        max-height: none;
+        margin-bottom: 50px;
+    }
+
+    .contact p {
+        max-width: 60%;
+    }
+
+    .footer-name,
+    .secondary-nav li a {
+        font-size: 1.5em;
+    }
+}
+
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
