@@ -24,56 +24,93 @@
 
                     <legend class="contact">Contact Information</legend>
 
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Required">
+                    <div class="item">
+                        <label for="name" >Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Required">
+                    </div>
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Required">
+                    <div class="item">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Required">
+                    </div>
 
-                    <label for="number">Phone Number</label>
-                    <input type="tel" id="number" name="number">
+                    <div class="item">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="number">
+                    </div>
 
-                    <label for="street">Street Address</label>
-                    <input type="text" id="street" name="street">
+                    <div class="item">
+                        <label for="street">Street Address</label>
+                        <input type="text" id="street" name="street">
+                    </div>
 
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city">
+                    <div class="item">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
 
-                    <label for="state">State</label>
-                    <select id="state" name="state">
-                        <option value="NSW">NSW</option>
-                        <option value="QLD">QLD</option>
-                        <option value="VIC">VIC</option>
-                        <option value="NT">NT</option>
-                        <option value="WA">WA</option>
-                        <option value="SA">SA</option>
-                        <option value="TAS">TAS</option>
-                    </select>
+                    <div class="item">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="VIC">VIC</option>
+                            <option value="NT">NT</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="TAS">TAS</option>
+                        </select>
+                    </div>
 
-                    <label for="post-code">Post Code</label>
-                    <input type="number" id="post" name="post-code">
+                    <div class="item">
+                        <label for="post_code">Post Code</label>
+                        <input type="number" id="post_code" name="post_code">
+                    </div>
                 </fieldset>
 
-                <h2 class="news">Newsletter</h2>
-                <label class="subheading">Select the newsletters you would like to recieve</label>
-                
+                <div class="border-2"></div>
+
+                <fieldset class="container">
+                    <legend class="contact">Newsletter</legend>
+                    <label class="subheading">Select the newsletters you would like to recieve</label>
+                    
+                    <div class="item-2">
+                        <input type="checkbox" id="html" name="news" value="html" checked>
+                        <label for="html">HTML News</label>
+                    </div>
+                    
+                    <div class="item-2">
+                        <input type="checkbox" id="css" name="news" value="css">
+                        <label for="css">CSS News</label>
+                    </div>
+
+                    <div class="item-2">
+                        <input type="checkbox" id="javascript" name="news" value="javascript">
+                        <label for="javascript">Javascript News</label>
+                    </div>
+
+                    <label class="subheading">Newsletter format</label>
+
+                    <div class="item-2">
+                        <input type="radio" id="html_form" name="format" value="html" checked>
+                        <label for="html_form">HTML</label>
+                    </div>
+
+                    <div class="item-2">
+                        <input type="radio" id="plain" name="format" value="plain">
+                        <label for="plain">Plain text</label>
+                    </div>
+                    
+
+                    <label for="topics" class="topics">Other topics you'd like to hear about</label>
+                    <textarea id="topics" name="topics"></textarea>
+                    
+                    
+                </fieldset>
+
                 <div class="container">
-                    <div class="item"><input type="checkbox" id="html" name="html" value="html" checked><label for="html">HTML News</label></div>
-                    <div class="item"><input type="checkbox" id="css" name="css" value="css"><label for="css">CSS News</label></div>
-                    <div class=""><input type="checkbox" id="javascript" name="javascript" value="javascript"><label for="javascript">Javascript News</label></div>
+                    <button type="submit" formmethod="post" id="button" name="sign_up" class="btn">Sign Up</button>
                 </div>
-
-                <label class="subheading">Newsletter format</label>
-
-                <div class="container">
-                    <div class="item"><input type="radio" id="html" name="html" checked><label for="html">HTML</label></div>
-                    <div class="item"><input type="radio" id="plain" name="plain"><label for="plain">Plain text</label></div>
-                </div>
-
-                <label for="topics" class="topics">Other topics you'd like to hear about</label>
-                <textarea id="topics" name="topics"></textarea>
-
-                <button type="submit" class="btn">Sign Up</button>
 
             </form>
 
