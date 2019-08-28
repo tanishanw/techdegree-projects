@@ -5,9 +5,15 @@
     margin: 0;
 }
 
-main {
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 90%;
-    margin: 0 auto;
+    margin: 5px auto;
+    padding: 5px 0;
+    text-align: left;
+    border: none;
 }
 
 .name {
@@ -23,36 +29,40 @@ main {
 .heading {
     text-align: center;
     font-weight: bold;
+    font-size: 1.2em;
     margin: 40px auto 20px auto;
+}
+
+.contact {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 20px 0;
 }
 
 .bio {
     width: 80%;
+    text-align: center;
     font-size: .9em;
     color: rgb(156, 156, 156);
     margin: 20px auto 40px auto;
 }
 
-main {
-    text-align: left;
-}
-
-.border {
+.border-1 {
     display: content;
     border-bottom: 5px solid black;
     margin-bottom: 4px;
 }
 
-.contact {
+.border-2 {
+    display: content;
     border-top: 2px solid black;
-    margin: 0 0 40px 0;
-    padding-top: 20px;
-    text-align: left;
+    margin: 0 auto;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+legend {
+    display: block;
+    margin: 20px 0;
 }
 
 form label {
