@@ -5,6 +5,17 @@
     margin: 0;
 }
 
+body {
+    background: black;
+}
+
+form {
+    background: white;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 fieldset {
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +42,7 @@ fieldset {
     font-weight: bold;
     font-size: 1.2em;
     margin: 40px auto 20px auto;
+    color: white;
 }
 
 .contact {
@@ -44,7 +56,7 @@ fieldset {
     width: 80%;
     text-align: center;
     font-size: .9em;
-    color: rgb(156, 156, 156);
+    color: white;
     margin: 20px auto 40px auto;
 }
 
@@ -53,23 +65,13 @@ fieldset {
     flex-wrap: nowrap;
 }
 
-.border-1 {
-    width: 90%;
-    display: content;
-    border-bottom: 5px solid black;
-    margin: 0 auto 4px auto;
-}
-
-.border-2 {
-    display: content;
-    width: 90%;
-    border-top: 2px solid black;
-    margin: 0 auto;
-}
-
 .item label {
     color: rgb(156, 156, 156);
-    width: 100%;
+}
+
+.item input {
+    padding-left: 15px !important;
+    max-width: 80%;
 }
 
 .item input,
@@ -93,8 +95,20 @@ input::placeholder {
 input:focus,
 select:focus,
 textarea:focus {
-    border: 2px solid rgb(78, 68, 173);
+    border: 2px solid white;
     outline: 0;
+}
+
+.transition {
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.transition:focus {
+    background: rgb(25, 221, 211);
+    color: white;
+
 }
 
 .subheading {
@@ -120,18 +134,19 @@ textarea:focus {
 }
 
 .topics {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 textarea {
     width: 90%;
     margin: 0 auto;
     min-height: 100px;
+    padding-left: 10px;
 }
 
 .btn {
     width: 90%;
-    max-width: 300px;
+    max-width: 250px;
     align-self: center;
     text-align: center;
     margin: 20px auto;
@@ -160,10 +175,23 @@ footer {
     fieldset {
         display: flex;
         flex-direction: row;
+        max-width: 720px;
     }
 
     .contact {
         margin: 0;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .bio {
+        font-size: 1.2em;
     }
 
     .item {
@@ -179,15 +207,13 @@ footer {
         flex-direction: row;
         flex: 1;
         margin: 10px auto;
+        font-size: 1.2em;
     }
 
     .item input,
     .item select {
         flex: 3;
-    }
-
-    .item label {
-        padding: 10px 0;
+        max-width: 50%;
     }
 
     .item input {
